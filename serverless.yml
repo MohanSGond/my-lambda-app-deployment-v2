@@ -1,14 +1,13 @@
-service: my-lambda-app
+service: my-lambda-app-new
 
 provider:
   name: aws
-  runtime: nodejs12.x
-  stage: ${opt:stage, 'dev'}
-  region: ${opt:region, 'us-east-1'}
+  runtime: nodejs14.x
+  region: us-east-1
 
 functions:
   hello:
-    handler: src/handler.hello
+    handler: src/index.handler
     events:
       - http:
           path: hello
