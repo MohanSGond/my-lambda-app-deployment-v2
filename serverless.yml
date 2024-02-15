@@ -1,4 +1,4 @@
-service: my-lambda-app-new
+service: Lambda-GitHub-Copilot-Deployment-Demo-v1
 
 provider:
   name: aws
