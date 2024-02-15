@@ -19,7 +19,7 @@ jobs:
           node-version: 18
 
       - name: Configure AWS credentials
-        uses: aws-actions/configure-aws-credentials@v1
+        uses: fuller-inc/actions-aws-assume-role@v1
         with:
           role-to-assume: arn:aws:iam::750344256621:oidc-provider/token.actions.githubusercontent.com
           role-session-name: GitHubActions
